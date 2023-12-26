@@ -1,0 +1,46 @@
+{
+  "name": "ies_backend",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demon": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://GonzalezCris@bitbucket.org/mooders/ies_backend.git"
+  },
+  "author": "Cristian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/mooders/ies_backend/issues"
+  },
+  "homepage": "https://bitbucket.org/mooders/ies_backend#readme",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "body-parser": "^1.20.1",
+    "clipboardy": "^3.0.0",
+    "connect-history-api-fallback": "^2.0.0",
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.7.0",
+    "jsonwebtoken": "^9.0.0",
+    "mime-types": "^2.1.35",
+    "morgan": "^1.10.0",
+    "mssql": "^9.0.1",
+    "multer": "^1.4.4",
+    "rand-token": "^1.0.1"
+  },
+  "devDependencies": {
+    "@janiscommerce/api-schema-builder": "^1.1.1",
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "http": "^0.0.1-security",
+    "nodemon": "^2.0.20",
+    "nyc": "^15.1.0"
+  }
+}

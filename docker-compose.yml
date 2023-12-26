@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  firewall:
+      container_name: ies_backend
+      restart: unless-stopped
+      image: node:14.16.0-alpine3.10
+      volumes:
+          - './:/app'
+      command: /bin/sh -c "npm install; node server.js"
+      working_dir: /app
+      ports:
+        - "3000:3000"
+      networks:
+        iesnetwork:
+          aliases:
+            - backies
+networks:
+  iesnetwork:
+    name: ies_net
+    driver: bridge
